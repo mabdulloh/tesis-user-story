@@ -2,7 +2,7 @@ import re
 import os
 import nltk
 from yattag import Doc
-from core.defect import *
+from src.defect import *
 
 try:
 	nltk.data.find('tokenizers/punkt')

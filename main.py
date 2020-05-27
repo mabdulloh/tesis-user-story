@@ -1,9 +1,8 @@
 import os, sys, getopt
-
-from core.wellformed import *
-from core.analyzer import *
-from core.globals import *
-from core.stories import *
+from src.wellformed import *
+from src.analyzer import *
+from src.globals import *
+from src.stories import *
 from argparse import ArgumentParser
 
 def main(argv):

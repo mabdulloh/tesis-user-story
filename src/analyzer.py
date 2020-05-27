@@ -5,9 +5,9 @@ from nltk.metrics import edit_distance
 import re
 import operator
 import collections
-from core.globals import *
-from core.dictionaries import *
-from core.stories import *
+from src.globals import *
+from src.dictionaries import *
+from src.stories import *
 
 class Analyzer:
   def generate_defects(kind, story, allStories=[], **kwargs):

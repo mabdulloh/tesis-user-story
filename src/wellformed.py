@@ -1,4 +1,4 @@
-from core.globals import *
+from src.globals import *
 
 class WellFormedAnalyzer:
   def well_formed(story):

@@ -5,8 +5,8 @@ from nltk.metrics import edit_distance
 import re
 import operator
 import collections
-from core.stories import *
-from core.globals import *
+from src.stories import *
+from src.globals import *
 
 class Stories:
 	def __init__(self, project):
