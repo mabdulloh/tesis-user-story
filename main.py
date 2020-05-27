@@ -22,7 +22,7 @@ def main(argv):
       sys.exit()
     elif opt == '-i':
       inputfile = arg
-    elif opt == 'f':
+    elif opt == '-f':
       outputformat = arg
     elif opt == '-o':
       outputfile = arg
@@ -51,13 +51,36 @@ def main(argv):
     WellFormedAnalyzer.well_formed(story)
     Analyzer.atomic(story)
     Analyzer.clear(story)
-    #Analyzer.consistent(story, allStories)
-    #Analyzer.unique(story,allStories)
     allStories.add_story(story)
 
     output_text = ""
-    for defect in defects:
-      output_text = output_text + defect.print_txt()
+
+    if outputformat == 'html':
+      with tag('html'):
+        with tag('head'):
+          with tag('script', src='sorttable.js', type='text/javascript'):
+            pass
+          with tag('link', rel='stylesheet', href='styles.css'):
+            pass
+          with tag('body'):
+            with tag('table', klass='sortable'):
+              with tag('thead'):
+                with tag('tr'):
+                  with tag('th'):
+                    text('ID')
+                  with tag('th'):
+                    text('User story')
+                  with tag('th'):
+                    text('Defect type')
+                  with tag('th'):
+                    text('Note')
+              with tag('tbody'):
+                for defect in defects:
+                  defect.print_html(doc, tag, text)
+      output_text = doc.getvalue()
+    else:
+      for defect in defects:
+        output_text = output_text + defect.print_txt()
 
   if outputfile == '':
     print (output_text)
