@@ -1,0 +1,99 @@
+Story #1: "As a site member, I want to describe if applicable myself on my best page in a minimal semi-structured way, so that others can learn about me."
+   Defect type: clear.superlative
+   Message: As a site member, I want to describe if applicable myself on my [* best *] page in a minimal semi-structured way, so that others can learn about me.
+Story #1: "As a site member, I want to describe if applicable myself on my best page in a minimal semi-structured way, so that others can learn about me."
+   Defect type: clear.ambiguous
+   Message: As a site member, I want to describe if applicable myself on my best page in a [* minimal *] semi-structured way, so that others can learn about me.
+Story #1: "As a site member, I want to describe if applicable myself on my best page in a minimal semi-structured way, so that others can learn about me."
+   Defect type: clear.loopholes
+   Message: As a site member, I want to describe [* if applicable *] myself on my best page in a minimal semi-structured way, so that others can learn about me.
+Story #2: "As a site member, I want to fill out an application to become a more practical Certified Scrum Practitioner, so that I can earn that designation."
+   Defect type: clear.comparative
+   Message: As a site member, I want to fill out an application to become a [* more *] practical Certified Scrum Practitioner, so that I can earn that designation.
+Story #3: "As a Practitioner, I want to not include additional details about me in my profile page, so that I can showcase my experience."
+   Defect type: clear.negative_statement
+   Message: As a Practitioner, I want to [* not *] include additional details about me in my profile page, so that I can showcase my experience.
+Story #4: "As a site member, I want to fill out a simple application to become a Certified Scrum Trainer, so that I can teach CSM and CSPO courses and certify others."
+   Defect type: clear.subjective
+   Message: As a site member, I want to fill out a [* simple *] application to become a Certified Scrum Trainer, so that I can teach CSM and CSPO courses and certify others.
+Story #6: "As a Practitioner, I want to write a minimal article for the site with a small graphic shown with the article showing my CSP or CST status, so that others know my certifications when reading."
+   Defect type: clear.ambiguous
+   Message: As a Practitioner, I want to write a [* minimal *] article for the site with a small graphic shown with the article showing my CSP or CST status, so that others know my certifications when reading.
+Story #7: "As a trainer, I want to list my upcoming classes in my profile and include a link to a detailed page about each, so that prospective attendees can find my courses."
+   Defect type: atomic.conjunctions
+   Message: As a trainer, I want to list my upcoming classes in my profile [* and *] include a link to a detailed page about each, so that prospective attendees can find my courses.
+Story #13: "As a site administrator, I want to read practicing and training applications and approve or reject them, so that only applicants who qualify can become CSPs or CSTs."
+   Defect type: atomic.conjunctions
+   Message: As a site administrator, I want to read practicing [* and *] training applications and approve [* or *] reject them, so that only applicants who qualify can become CSPs or CSTs.
+Story #16: "As a site visitor, I want to access old news that is no longer on the home page, so that I can access things I remember from the past or that others mention to me."
+   Defect type: clear.comparative
+   Message: As a site visitor, I want to access old news that is no [* longer *] on the home page, so that I can access things I remember from the past or that others mention to me.
+Story #16: "As a site visitor, I want to access old news that is no longer on the home page, so that I can access things I remember from the past or that others mention to me."
+   Defect type: clear.negative_statement
+   Message: As a site visitor, I want to access old news that is [* no *] longer on the home page, so that I can access things I remember from the past or that others mention to me.
+Story #21: "As a site visitor, I want to see a list of all upcoming Certification Courses and can page through them if there are a lot, so that I can choose the best course for me."
+   Defect type: atomic.conjunctions
+   Message: As a site visitor, I want to see a list of all upcoming Certification Courses [* and *] can page through them if there are a lot, so that I can choose the best course for me.
+Story #22: "As a site visitor, I want to see a list of all upcoming Other Courses and can page through them if necessary, so that I can choose the best course for me."
+   Defect type: atomic.conjunctions
+   Message: As a site visitor, I want to see a list of all upcoming Other Courses [* and *] can page through them if necessary, so that I can choose the best course for me.
+Story #25: "As a trainer, I want to create an Other Course or Event I am charged a listing fee for that activity, so that I don't list events I don't really intend to hold."
+   Defect type: atomic.conjunctions
+   Message: As a trainer, I want to create an Other Course [* or *] Event I am charged a listing fee for that activity, so that I don't list events I don't really intend to hold.
+Story #26: "As a site administrator, I want to create an Other Course or Event that is not charged a listing fee, so that the Scrum Alliance doesn't charge itself for Scrum Gatherings that it puts on."
+   Defect type: atomic.conjunctions
+   Message: As a site administrator, I want to create an Other Course [* or *] Event that is not charged a listing fee, so that the Scrum Alliance doesn't charge itself for Scrum Gatherings that it puts on.
+Story #26: "As a site administrator, I want to create an Other Course or Event that is not charged a listing fee, so that the Scrum Alliance doesn't charge itself for Scrum Gatherings that it puts on."
+   Defect type: clear.negative_statement
+   Message: As a site administrator, I want to create an Other Course or Event that is [* not *] charged a listing fee, so that the Scrum Alliance doesn't charge itself for Scrum Gatherings that it puts on.
+Story #35: "As a site visitor, I want to view a course I can click on the trainer's name and be taken to the trainer's profile, so that I can read more about a trainer before registering for a course."
+   Defect type: atomic.conjunctions
+   Message: As a site visitor, I want to view a course I can click on the trainer's name [* and *] be taken to the trainer's profile, so that I can read more about a trainer before registering for a course.
+Story #40: "As a site member, I want to download the latest training material and methodology PDFs, so that I have them."
+   Defect type: clear.superlative
+   Message: As a site member, I want to download the [* latest *] training material and methodology PDFs, so that I have them.
+Story #47: "As a site admin, I want to edit and delete help wanted ads, so that I can correct small problems or make sure each ad complies with site guidelines."
+   Defect type: atomic.conjunctions
+   Message: As a site admin, I want to edit [* and *] delete help wanted ads, so that I can correct small problems [* or *] make sure each ad complies with site guidelines.
+Story #49: "As a recruiter, I want to be able to extend an ad for another 30 days by visiting the site and updating the posting, so that my ad remains active."
+   Defect type: atomic.conjunctions
+   Message: As a recruiter, I want to be able to extend an ad for another 30 days by visiting the site [* and *] updating the posting, so that my ad remains active.
+Story #55: "As a site editor, I want to set start publishing dates, old article date, and stop publishing dates for articles, so that articles appear only during appropriate periods."
+   Defect type: atomic.conjunctions
+   Message: As a site editor, I want to set start publishing dates, old article date, [* and *] stop publishing dates for articles, so that articles appear only during appropriate periods.
+Story #56: "As a site editor, I want to be able to designate whether or not an ever makes the home page, so that the best content is featured most prominently."
+   Defect type: atomic.conjunctions
+   Message: As a site editor, I want to be able to designate whether [* or *] not an ever makes the home page, so that the best content is featured most prominently.
+Story #56: "As a site editor, I want to be able to designate whether or not an ever makes the home page, so that the best content is featured most prominently."
+   Defect type: clear.negative_statement
+   Message: As a site editor, I want to be able to designate whether or [* not *] an ever makes the home page, so that the best content is featured most prominently.
+Story #58: "As a site visitor, I want to click the link from the article teaser to take me directly to the body of the article. not to another teaser setup, so that I can easily finish the article."
+   Defect type: clear.negative_statement
+   Message: As a site visitor, I want to click the link from the article teaser to take me directly to the body of the article. [* not *] to another teaser setup, so that I can easily finish the article.
+Story #65: "As a site editor, I want to have a prominent area on the home page where I can put special announcements not necessarily news or articles, so that I can give them additional exposure."
+   Defect type: clear.negative_statement
+   Message: As a site editor, I want to have a prominent area on the home page where I can put special announcements [* not *] necessarily news or articles, so that I can give them additional exposure.
+Story #69: "As a site visitor, I want to have articles that interest me and are easy to get to, so that I come to the site for my agile news and learning."
+   Defect type: atomic.conjunctions
+   Message: As a site visitor, I want to have articles that interest me [* and *] are easy to get to, so that I come to the site for my agile news and learning.
+Story #70: "As a site visitor, I want to know as soon as I visit what on earth Scrum is and why it needs an alliance, so that I don't bounce immediately oﬀ the page."
+   Defect type: atomic.conjunctions
+   Message: As a site visitor, I want to know as soon as I visit what on earth Scrum is [* and *] why it needs an alliance, so that I don't bounce immediately oﬀ the page.
+Story #71: "As a site visitor, I want to know as I glance around the home page what on earth a CSM is and why I'd want to be one, so that I read more."
+   Defect type: atomic.conjunctions
+   Message: As a site visitor, I want to know as I glance around the home page what on earth a CSM is [* and *] why I'd want to be one, so that I read more.
+Story #73: "As a site visitor, I want to see a list of the most popular items on the site, so that I am most likely to read the most important or best content."
+   Defect type: clear.superlative
+   Message: As a site visitor, I want to see a list of the [* most *] popular items on the site, so that I am most likely to read the most important or best content.
+Story #74: "As a trainer, I want to be assured that no one can submit the same answers multiple time and skew my results, so that my ratings are accurate."
+   Defect type: clear.negative_statement
+   Message: As a trainer, I want to be assured that [* no *] one can submit the same answers multiple time and skew my results, so that my ratings are accurate.
+Story #81: "As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, and Certified Scrum Product Owners."
+   Defect type: atomic.conjunctions
+   Message: As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, [* and *] Certified Scrum Product Owners.
+Story #86: "As a CSM, I want to be sent an email welcoming me to the Scrum Alliance and with instructions to register or activate my membership once my name has been loaded to the registry."
+   Defect type: atomic.conjunctions
+   Message: As a CSM, I want to be sent an email welcoming me to the Scrum Alliance [* and *] with instructions to register [* or *] activate my membership once my name has been loaded to the registry.
+Story #95: "As a member, I want to have the system email me a new password or a password reminder since i have short-term memory problems."
+   Defect type: atomic.conjunctions
+   Message: As a member, I want to have the system email me a new password [* or *] a password reminder since i have short-term memory problems.
