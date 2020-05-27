@@ -18,7 +18,7 @@ class Defect:
 			with tag('td'):
 				text(self.story_title)
 			with tag('td'):
-				text(self.kind + ' ' + self.subkind)
+				text(self.kind + ' - ' + self.subkind)
 			with tag('td'):
 				doc.asis(self.message.replace("[*","<mark>").replace("*]", "</mark>"))
 			

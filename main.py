@@ -13,26 +13,30 @@ def main(argv):
   try:
     opts, args = getopt.getopt(argv,"i:o:f:",["ifile=","ofile=","oformat="])
   except getopt.GetoptError:
-    print ('  The right way to invoke the program is: \n  python aqusacore.py -i <inputfile>  [-o <outputfile>] [-f <outputformat>] ,\n  with <outputformat> being txt or html')
+    print ('  The right way command to execute is: \n  python main.py -i <inputfile>  [-o <outputfile>] [-f <outputformat>] ,\n  with <outputformat> being either txt or html')
     sys.exit(2)
   # check cli args
   for opt,arg in opts:
-    if opt == 'h':
+    if opt == '-h':
+      ('  The right way command to execute is: \n  python main.py -i <inputfile>  [-o <outputfile>] [-f <outputformat>] ,\n  with <outputformat> being either txt or html')
       sys.exit()
     elif opt == '-i':
       inputfile = arg
+      print("Input file: input/" + inputfile)
     elif opt == '-f':
       outputformat = arg
+      print("Output format: " + outputformat)
     elif opt == '-o':
       outputfile = arg
+      print("Output file: output/" + outputfile)
   
   if inputfile == '':
     print('The input file is invalid')
     sys.exit()
   
   if os.path.exists('input/' + inputfile):
-    with open('input/' + inputfile) as input:
-      raw = input.readlines()
+    with open('input/' + inputfile) as file:
+      raw = file.readlines()
   else:
     print('The file does not exist')
     sys.exit(2)
@@ -52,40 +56,40 @@ def main(argv):
     Analyzer.clear(story)
     allStories.add_story(story)
 
-    output_text = ""
+  output_text = ""
 
-    if outputformat == 'html':
-      with tag('html'):
-        with tag('head'):
-          with tag('script', src='sorttable.js', type='text/javascript'):
-            pass
-          with tag('link', rel='stylesheet', href='styles.css'):
-            pass
-          with tag('body'):
-            with tag('table', klass='sortable'):
-              with tag('thead'):
-                with tag('tr'):
-                  with tag('th'):
-                    text('ID')
-                  with tag('th'):
-                    text('User story')
-                  with tag('th'):
-                    text('Defect type')
-                  with tag('th'):
-                    text('Note')
-              with tag('tbody'):
-                for defect in defects:
-                  defect.print_html(doc, tag, text)
-      output_text = doc.getvalue()
-    else:
-      for defect in defects:
-        output_text = output_text + defect.print_txt()
+  if outputformat == 'html':
+    with tag('html'):
+      with tag('head'):
+        with tag('script', src='sorttable.js', type='text/javascript'):
+          pass
+        with tag('link', rel='stylesheet', href='styles.css'):
+          pass
+        with tag('body'):
+          with tag('table', klass='sortable'):
+            with tag('thead'):
+              with tag('tr'):
+                with tag('th'):
+                  text('ID')
+                with tag('th'):
+                  text('User story')
+                with tag('th'):
+                  text('Defect type')
+                with tag('th'):
+                  text('Note')
+            with tag('tbody'):
+              for defect in defects:
+                defect.print_html(doc, tag, text)
+    output_text = doc.getvalue()
+  else:
+    for defect in defects:
+      output_text = output_text + defect.print_txt()
 
   if outputfile == '':
     print (output_text)
   else:
-    input = open("output/" + outputfile + "." + outputformat, "w")
-    input.write(output_text) 
+    file = open("output/" + outputfile + "." + outputformat, "w")
+    file.write(output_text) 
 	
 if __name__ == "__main__":
    main(sys.argv[1:])
