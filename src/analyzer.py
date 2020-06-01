@@ -29,6 +29,10 @@ class Analyzer:
     for chunk in ['"role"', '"means"', '"ends"']:
       Analyzer.generate_defects('atomic', story, chunk=chunk)
     return story
+  
+  def well_formed(story):
+    Analyzer.generate_defects('well_formed', story)
+    return story
 
   def content_chunking(chunk, kind):
     sentence = nltk.word_tokenize(chunk)

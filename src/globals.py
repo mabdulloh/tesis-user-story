@@ -17,7 +17,8 @@ except:
 doc, tag, text = Doc().tagtext()
 
 ROLE_INDICATORS = ["^As ", "^As a ", "^As an "]
-MEANS_INDICATORS = ["[, ]I want to ", "[, ]I can ", "[, ]I should be able to ", "[, ]I am able to ", "[, ]I'm able to "]
+MEANS_INDICATORS = ["[, ]I want ", "[, ]I would like", "[, ]I can ", "[, ]I don't want", 
+                    "[, ]I should be able to ", "[, ]I am able to ", "[, ]I'm able to "]
 ENDS_INDICATORS = ["[, ]So that ", "[, ]In order to ","[, ]So "]
 CONJUNCTIONS = [' and ', ' or ', '&', '/', '>', '<']
 PUNCTUATION = ['.', ';', ':', '‒', '–', '—', '―', '‐', '-', '?', '*']
